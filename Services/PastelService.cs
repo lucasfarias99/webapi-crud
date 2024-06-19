@@ -1,6 +1,6 @@
 using rest_api.Models;
 
-namespace LucasPastel.Services;
+namespace rest_api.Services;
 
 public static class PastelService
 {
