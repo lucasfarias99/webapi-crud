@@ -1,6 +1,37 @@
 @rest_api_HostAddress = http://localhost:5194
 
-GET {{rest_api_HostAddress}}/weatherforecast/
+
+GET {{rest_api_HostAddress}}/pastel/3
 Accept: application/json
+
+###
+
+POST {{rest_api_HostAddress}}/pastel/
+Content-Type: application/json
+
+{
+    "nome": "Hawaii",
+    "isGlutenFree": false
+}
+
+###
+
+PUT {{rest_api_HostAddress}}/pastel/3
+Content-Type: application/json
+
+{
+    "id": 3,
+    "nome": "Hawaiian",
+    "isGlutenFree": false
+}
+
+###
+
+GET {{rest_api_HostAddress}}/pastel/
+Accept: application/json
+
+###
+
+DELETE {{rest_api_HostAddress}}/pastel/3
 
 ###

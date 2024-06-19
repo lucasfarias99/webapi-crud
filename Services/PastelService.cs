@@ -32,7 +32,7 @@ public static class PastelService
 
     public static void Update(Pastel pastel)
     {
-        var index = Pasteis.IndexOf(pastel);
+        var index = Pasteis.FindIndex(p => p.Id == pastel.Id);
         if (index == -1) return;
 
         Pasteis[index] = pastel;
